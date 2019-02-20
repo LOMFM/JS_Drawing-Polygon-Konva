@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Konva Polygon</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Start Plugins -->
+    <link href="./plugins/color-picker/color-picker.min.css" rel="stylesheet">
+    <!-- End plugins -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="tools">
+            <a class="polygon tool">
+                <img src="./img/icons/polygon.svg" />
+            </a>
+            <a class="erase tool">
+                <img src="./img/icons/eraser.svg" />
+            </a>
+        </div>
+    </nav>
+    <div class="options">
+        <div class="anchor-option">
+            <label>Anchor Options</label>
+            <div class="form-inline">
+                <label for="line-width">Radius :</label>
+                <select class="form-control" id="anchor-radius">
+                    <option selected value="5">5px</option>
+                    <option value="6">6px</option>
+                    <option value="7">7px</option>
+                    <option value="8">8px</option>
+                    <option value="9">9px</option>
+                    <option value="10">10px</option>
+                </select>
+            </div>
+            <div class="form-inline">
+                <label for="anchor-color">Color: </label>
+                <button class="btn color" id="anchor-color" data-value="#000000"></button>
+            </div>
+            <div class="form-inline">
+                <label for="anchor-color">Background: </label>
+                <button class="btn color" id="anchor-bgcolor" data-value="#0000ff"></button>
+            </div>
+        </div>
+        <div class="line-option">
+            <label>Line Options</label>
+            <div class="form-inline">
+                <label for="line-width">Width :</label>
+                <select class="form-control" id="line-width">
+                    <option selected value="2">2px</option>
+                    <option value="3">3px</option>
+                    <option value="4">4px</option>
+                    <option value="5">5px</option>
+                    <option value="6">6px</option>
+                    <option value="7">7px</option>
+                    <option value="8">8px</option>
+                    <option value="9">9px</option>
+                    <option value="10">10px</option>
+                </select>
+            </div>
+            <div class="form-inline">
+                <label for="line-color">Color: </label>
+                <button class="btn color" id="line-color" data-value="#0000ff"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pane-container">
+        <div class="pane" id="pane">
+            
+        </div>
+    </div>
+    <script src="https://unpkg.com/konva@2.4.2/konva.min.js"></script>
+    <script type="text/javascript" src="./plugins/color-picker/color-picker.min.js"></script>
+    <script type="text/javascript" src="./js/ui_script.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>
