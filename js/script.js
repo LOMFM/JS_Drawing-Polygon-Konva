@@ -203,16 +203,6 @@ function startEndDrawing(e) {
             pointIds.pop();
             snappingCircleArea.pop().remove();
         }
-        // else if( newPointCount == 2){
-        //     points.pop().remove();
-        //     snappingCircleArea.pop().remove();
-        //     points.pop().remove();
-        //     snappingCircleArea.pop().remove();
-        //     pointIds.pop();
-        //     pointIds.pop();
-        //     snappingLineArea.pop().remove();
-        //     polylines.pop().remove();
-        // }
 
         if( snappingLineArea.length != polylines.length ){
             polylines.pop().remove();
@@ -402,6 +392,7 @@ function createPointLine(e) {
             layer.draw();
         }
     }
+    // Please enable this if you `d like to draw with by only clicking.
     // else{
     //     if( !selectedPoint ){
     //         if( e.target.nodeType == "Stage" ){
